@@ -38,9 +38,9 @@ namespace SeleniumProject
             driver.FindElement(By.XPath("//input[@name='password']")).SendKeys("hello123");
             driver.FindElement(By.XPath("//input[@name='confirmPassword']")).SendKeys("hello123");
 
-            driver.FindElement(By.XPath("//input[@name='register']")).Click();
+            //driver.FindElement(By.XPath("//input[@name='register']")).Click();
 
-            driver.Close();
+            //driver.Close();
         }
 
 
@@ -54,18 +54,18 @@ namespace SeleniumProject
 
             driver.FindElement(By.XPath("//input[@name='userName']")).SendKeys("AnqTest1");
             driver.FindElement(By.XPath("//input[@name='password']")).SendKeys("hello123");
-            driver.FindElement(By.XPath("//input[@name='login']")).Click();
+            //driver.FindElement(By.XPath("//input[@name='login']")).Click();
 
-            if (driver.FindElement(By.XPath("//a[text()='PROFILE']")).Displayed)
-            {
-                Console.Write("Login successful");
-            }
-            else
-            {
-                Console.WriteLine("Login did not work");
-            }
+            //if (driver.FindElement(By.XPath("//a[text()='PROFILE']")).Displayed)
+            //{
+            //    Console.Write("Login successful");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Login did not work");
+            //}
 
-            driver.Close();
+           
 
         }
 
@@ -118,7 +118,6 @@ namespace SeleniumProject
 
             driver.Close();
         }
-
 
     }
 }
